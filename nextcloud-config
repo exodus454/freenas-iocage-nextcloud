@@ -1,6 +1,6 @@
 # Initialize defaults
 JAIL_IP="10.0.102.16"
-JAIL_INTERFACES=""
+JAIL_INTERFACES="vtnet0"
 DEFAULT_GW_IP="10.0.100.2"
 INTERFACE="vnet0"
 VNET="on"
