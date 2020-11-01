@@ -59,7 +59,7 @@ elif [ "${DATABASE}" = "pgsql" ]; then
   DB_NAME="PostgreSQL"
 fi
 
-RELEASE=$(freebsd-version | sed "s/BETA/RELEASE/g" | sed "s/-p[0-9]*//")
+RELEASE="12.2-RELEASE"
 JAILS_MOUNT=$(zfs get -H -o value mountpoint $(iocage get -p)/iocage)
 
 #####
