@@ -15,21 +15,21 @@ fi
 #####
 
 # Initialize defaults
-JAIL_IP=""
+JAIL_IP="1"
 JAIL_INTERFACES=""
-DEFAULT_GW_IP=""
+DEFAULT_GW_IP="10.0.100.2"
 INTERFACE="vnet0"
 VNET="on"
-POOL_PATH=""
-JAIL_NAME="nextcloud"
-TIME_ZONE=""
-HOST_NAME=""
-DATABASE="mariadb"
-DB_PATH=""
-FILES_PATH=""
-PORTS_PATH=""
-CONFIG_PATH=""
-THEMES_PATH=""
+POOL_PATH="/mnt/jbod"
+JAIL_NAME="nextcloud-jail"
+TIME_ZONE="America/New_York"
+HOST_NAME="nextcloud-jail"
+DATABASE="pgsql"
+DB_PATH="/nextcloud/next-postgres"
+FILES_PATH="/nextcloud/nextcloud-files"
+PORTS_PATH="/nextcloud/bsd-ports"
+CONFIG_PATH="/nextcloud/nextcloud-config"
+THEMES_PATH="/nextcloud/themes"
 STANDALONE_CERT=0
 SELFSIGNED_CERT=0
 DNS_CERT=0
